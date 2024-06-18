@@ -1,38 +1,70 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-export const addProduct = createAsyncThunk(
-    'products/addProduct',
-    async (product, { rejectWithValue }) => {
-        try {
-            const response = await axios.post('http://localhost:3001/allProducts', product);
-            return response.data;
-        } catch (error) {
-            return rejectWithValue(error.response.data);
-        }
-    }
-);
+const API_URL = 'http://localhost:3001/allProducts';
+
+export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
+    const response = await axios.get(API_URL);
+    return response.data;
+});
+
+export const fetchProductById = createAsyncThunk('products/fetchProductById', async (id) => {
+    const response = await axios.get(`${API_URL}/${id}`);
+    return response.data;
+});
+
+export const addProduct = createAsyncThunk('products/addProduct', async (product) => {
+    const response = await axios.post(API_URL, product);
+    return response.data;
+});
+
+export const updateProduct = createAsyncThunk('products/updateProduct', async (product) => {
+    const { id, ...fields } = product;
+    const response = await axios.put(`${API_URL}/${id}`, fields);
+    return response.data;
+});
+
+export const deleteProduct = createAsyncThunk('products/deleteProduct', async (id) => {
+    await axios.delete(`${API_URL}/${id}`);
+    return id;
+});
 
 const productsSlice = createSlice({
     name: 'products',
     initialState: {
-        products: [],
-        status: null,
+        items: [],
+        currentProduct: null,
+        status: 'idle',
         error: null,
     },
     reducers: {},
     extraReducers: (builder) => {
         builder
-            .addCase(addProduct.pending, (state) => {
+            .addCase(fetchProducts.pending, (state) => {
                 state.status = 'loading';
             })
-            .addCase(addProduct.fulfilled, (state, action) => {
+            .addCase(fetchProducts.fulfilled, (state, action) => {
                 state.status = 'succeeded';
-                state.products.push(action.payload);
+                state.items = action.payload;
             })
-            .addCase(addProduct.rejected, (state, action) => {
+            .addCase(fetchProducts.rejected, (state, action) => {
                 state.status = 'failed';
-                state.error = action.payload;
+                state.error = action.error.message;
+            })
+            .addCase(fetchProductById.fulfilled, (state, action) => {
+                state.currentProduct = action.payload;
+            })
+            .addCase(addProduct.fulfilled, (state, action) => {
+                state.items.push(action.payload);
+            })
+            .addCase(updateProduct.fulfilled, (state, action) => {
+                const index = state.items.findIndex((product) => product.id === action.payload.id);
+                if (index !== -1) {
+                    state.items[index] = action.payload;
+                }
+            })
+            .addCase(deleteProduct.fulfilled, (state, action) => {
+                state.items = state.items.filter((product) => product.id !== action.payload);
             });
     },
 });

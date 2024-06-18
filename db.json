@@ -31,22 +31,18 @@
   ],
   "allProducts": [
     {
-      "productType": 2,
-      "news": "true",
-      "id": "1",
       "name": "Чизбургер",
       "description": "Булка, котлета, сыр, соленый огурец, лук, помидор, салат айсберг, соус чесночный, соус гриль, кетчуп, майонез",
-      "price": "200 сом",
-      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACQCAYAAABNhSQEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAMVLSURBVHgB7L0HnK5nWSZ+ve3rfXqfOb2flJNOKgFCEaQpiAgIKyLiWlbUFd3gurpgwQIooCggRaSGkEAgIaT30/uZM71/vZe3/K/7eeeEyLL/dZecRDAvv"
+      "price": "201 сом",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACQCAYAAABNhSQEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAMVLSURBVHgB7L0HnK5nWSZ+ve3rfXqfOb2flJNOKgFCEaQpiAgIKyLiWlbUFd3gurpgwQIooCggRaSGkEAgIaT30/uZM71/vZe3/K/7eeeEyLL/dZecRDAvv",
+      "id": "1"
     },
     {
-      "productType": 2,
-      "news": "true",
-      "id": "2",
       "name": "Чизбургер",
       "description": "Булка, котлета, сыр, соленый огурец, лук, помидор, салат айсберг, соус чесночный, соус гриль, кетчуп, майонез",
-      "price": "200 сом",
-      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACQCAYAAABNhSQEAAAACXBIWXMAAAsTAAA"
+      "price": "202 сом",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACQCAYAAABNhSQEAAAACXBIWXMAAAsTAAA",
+      "id": "2"
     },
     {
       "productType": 2,
@@ -58,13 +54,11 @@
       "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAM"
     },
     {
-      "productType": 2,
-      "news": "true",
-      "id": "4",
-      "name": "Чизбургер",
+      "name": "Beef Бургер",
       "description": "Булка, котлета, сыр, соленый огурец, лук, помидор, салат айсберг, соус чесночный, соус гриль, кетчуп, майонез",
       "price": "200 сом",
-      "image": "data:image/png;base64,iVBORw0KGgo"
+      "image": "data:image/png;base64,iVBORw0KGgo",
+      "id": "4"
     },
     {
       "id": "4082",
@@ -76,12 +70,12 @@
       "news": true
     },
     {
-      "id": "e897",
-      "name": "Атакан_Бургер_2",
-      "description": "Говядина, томаты",
-      "price": "300 сомов",
-      "productType": "2",
-      "image": "https://nevafood.ru/wp-content/uploads/2017/07/burger-ayam.jpg",
+      "id": "7b57",
+      "name": "Хот Чиз Ролл",
+      "description": "Тобико, огурцы маринованные, помидоры, крем-чиз, сыр сулугуни. ХОТ ЧИЗ Тобико, маринаддалган бадыра?, помидор, крем-чиз, сулугуни сыры. Hot cheese Tobiko, pickled cucumbers, tomatoes, cream-cheese, Suluguni cheese.",
+      "price": "318 сом",
+      "productType": "4",
+      "image": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v10/Rollyi/Khot_Chiz_roll/Medium.png?hash=725ee096cad3203ff2814c220c2fe087",
       "news": true
     }
   ]

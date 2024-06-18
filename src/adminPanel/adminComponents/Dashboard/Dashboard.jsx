@@ -19,7 +19,7 @@ const Dashboard = () => {
                 <input type="text" placeholder="Search..." />
                 <div className="user">
                     <img src="https://via.placeholder.com/30" alt="User" />
-                    <span>James Ferdinand</span>
+                    <span>Администратор</span>
                 </div>
             </div>
             <div className="cards">

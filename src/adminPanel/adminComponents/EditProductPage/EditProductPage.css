@@ -1,0 +1,42 @@
+.edit-product-page {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Mulish !important;
+}
+
+.edit-product-page h2 {
+    margin-bottom: 20px;
+}
+
+.edit-product-page form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-product-page label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.edit-product-page input {
+    margin-left: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.edit-product-page button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.edit-product-page button:hover {
+    background-color: #0056b3;
+}

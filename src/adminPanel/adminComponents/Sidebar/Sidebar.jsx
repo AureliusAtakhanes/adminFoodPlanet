@@ -22,10 +22,10 @@ const Sidebar = () => {
                     <Link to="/">Главная</Link>
                 </li>
                 <li>
-                    <Link to="/orders">Заказы</Link>
+                    <Link to="/createProduct">Новый продукт</Link>
                 </li>
                 <li>
-                    <Link to="/menu">Меню</Link>
+                    <Link to="/products">Продукты</Link>
                 </li>
                 <li>
                     <Link to="/contacts">Контакты</Link>

@@ -1,0 +1,41 @@
+/* src/adminPanel/adminComponents/ProductsPage/ProductsPage.css */
+.products-page {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.products-page h2 {
+    margin-bottom: 20px;
+}
+
+.products-page table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.products-page th,
+.products-page td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.products-page th {
+    background-color: #007bff;
+    color: white;
+}
+
+.products-page button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.products-page button:hover {
+    background-color: #0056b3;
+}
