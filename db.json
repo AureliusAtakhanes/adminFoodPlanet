@@ -42,15 +42,6 @@
     {
       "productType": 2,
       "news": "true",
-      "id": "2",
-      "name": "Чизбургер",
-      "description": "Булка, котлета, сыр, соленый огурец, лук, помидор, салат айсберг, соус чесночный, соус гриль, кетчуп, майонез",
-      "price": "200 сом",
-      "image": ""
-    },
-    {
-      "productType": 2,
-      "news": "true",
       "id": "3",
       "name": "Чизбургер",
       "description": "Булка, котлета, сыр, соленый огурец, лук, помидор, салат айсберг, соус чесночный, соус гриль, кетчуп, майонез",
@@ -67,13 +58,12 @@
       "image": ""
     },
     {
-      "id": "2cae",
       "name": "Хот-чиз ролл",
       "description": "Тобико, огурцы маринованные, помидоры, крем-чиз, сыр сулугуни. ХОТ ЧИЗ Тобико, маринаддалган бадыра?, помидор, крем-чиз, сулугуни сыры. Hot cheese Tobiko, pickled cucumbers, tomatoes, cream-cheese, Suluguni cheese.",
       "price": "318 сом",
-      "productType": "3",
       "image": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v10/Rollyi/Khot_Chiz_roll/Medium.png?hash=725ee096cad3203ff2814c220c2fe087",
-      "news": true
+      "productType": 4,
+      "id": "2cae"
     },
     {
       "id": "b84f",
@@ -82,6 +72,24 @@
       "price": "118 сом",
       "productType": "7",
       "image": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v46/Goriachie_napitki/Amerikano_kofe_Hausbrandt/Medium.png?hash=60f7d36188039a3d0816838dd485839c",
+      "news": true
+    },
+    {
+      "id": "5123",
+      "name": "Три шоколада",
+      "description": "Легкий торт из трех видов шоколада, черного, молочного и белого, сочетается с тонким шоколадным бисквитом на ореховой муке. A light cake made of three types of chocolate, black, milk and white, combined with a thin chocolate biscuit on hazelnut flour.",
+      "price": "288 с",
+      "productType": 6,
+      "image": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v10/Desertyi/Tri_shokolada/Medium.png?hash=70cb1ab686b5c27a4103fd97f9efd20b",
+      "news": true
+    },
+    {
+      "id": "1ac7",
+      "name": "4 Сыра",
+      "description": "Пицца-соус, сыры: моцарелла, эмменталь, дорблю, пармезан. 4 СЫРА Пицца-соус, сырлар: моцарелла, эмменталь, дорблю, пармезан. 4 Cheese Pizza. Pizza sauce with mozzarella, emmental, dorblue, parmesan.",
+      "price": "818 сом",
+      "productType": 1,
+      "image": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v45/Pitstsa_40sm/4_Syira_40sm/Medium.png?hash=f530c2fc1726d73286f6656fd56d59ae",
       "news": true
     }
   ],

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams, useNavigate } from 'react-router-dom';
 import { fetchProductById, updateProduct } from '../../../store/slices/productsSlice';
+import { IoIosArrowBack } from 'react-icons/io';
+
 import './EditProductPage.css'
 
 const EditProductPage = () => {
@@ -50,6 +52,12 @@ const EditProductPage = () => {
     return (
         <div className="edit-product-page">
             <h1>Редактировать продукт</h1>
+            <div className='backToProducts'>
+                <button onClick={() => navigate(-1)}>
+                    <IoIosArrowBack />
+                </button>
+            </div>
+
             <form onSubmit={handleSubmit}>
                 <label>
                     Название:
@@ -62,12 +70,12 @@ const EditProductPage = () => {
                 </label>
                 <label>
                     Описание:
-                    <input
+                    <textarea
                         type="text"
                         name="description"
                         value={formData.description}
                         onChange={handleChange}
-                    />
+                    ></textarea>
                 </label>
                 <label>
                     Цена:
