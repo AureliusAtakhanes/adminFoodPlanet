@@ -1,41 +1,62 @@
-/* src/adminPanel/adminComponents/ProductsPage/ProductsPage.css */
 .products-page {
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Mulish', sans-serif;
 }
 
-.products-page h2 {
+.products-page h1 {
     margin-bottom: 20px;
 }
 
-.products-page table {
+.filter-select {
     width: 100%;
-    border-collapse: collapse;
-}
-
-.products-page th,
-.products-page td {
+    padding: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+    border-radius: 5px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
 }
 
-.products-page th {
-    background-color: #007bff;
-    color: white;
+.products-page ul {
+    list-style: none;
+    padding: 0;
 }
 
+.products-page li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.products-page ul div {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.editing {
+    display: flex;
+    gap: 10px;
+}
+
+.products-page ul a,
 .products-page button {
+    text-decoration: none;
     background-color: #007bff;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
 }
 
+.products-page ul a:hover,
 .products-page button:hover {
     background-color: #0056b3;
 }

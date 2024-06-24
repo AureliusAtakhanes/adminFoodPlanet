@@ -14,13 +14,19 @@ export const fetchProductById = createAsyncThunk('products/fetchProductById', as
 });
 
 export const addProduct = createAsyncThunk('products/addProduct', async (product) => {
-    const response = await axios.post(API_URL, product);
+    const response = await axios.post(API_URL, {
+        ...product,
+        productType: parseInt(product.productType, 10)  // преобразование в число
+    });
     return response.data;
 });
 
 export const updateProduct = createAsyncThunk('products/updateProduct', async (product) => {
     const { id, ...fields } = product;
-    const response = await axios.put(`${API_URL}/${id}`, fields);
+    const response = await axios.put(`${API_URL}/${id}`, {
+        ...fields,
+        productType: parseInt(fields.productType, 10)  // преобразование в число
+    });
     return response.data;
 });
 
