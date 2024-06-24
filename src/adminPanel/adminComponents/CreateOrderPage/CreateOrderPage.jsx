@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addProduct } from '../../../store/slices/productsSlice';
-import './CreateOrderPage.css'; // Импортируйте CSS файл
+import './CreateOrderPage.css';
+import { useNavigate } from "react-router-dom";
 
 const CreateOrderPage = () => {
     const dispatch = useDispatch();
     const { status, error } = useSelector((state) => state.products);
+    const navigate = useNavigate();
+
 
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
@@ -24,6 +27,7 @@ const CreateOrderPage = () => {
             setPrice('');
             setProductType('');
             setImage('');
+            navigate('/products')
         }
     };
 
