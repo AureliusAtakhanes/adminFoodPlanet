@@ -91,6 +91,15 @@
       "productType": 1,
       "image": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v45/Pitstsa_40sm/4_Syira_40sm/Medium.png?hash=f530c2fc1726d73286f6656fd56d59ae",
       "news": true
+    },
+    {
+      "id": "185b",
+      "name": "Греческий салат",
+      "description": "Помидоры, болгарский перец, огурцы, сыр фетаки, микс листьев салата, маслины. Заправлен фирменным соусом. ГРЕК САЛАТЫ Помидор, болгар калемпири, бадыра?, фетаки сыры, салат жалбырактарынын аралашмасы, зайтун. Фирмалык чык менен аралаштырылат. Greek salad. Tomatoes, bell peppers, cucumbers, fetaki cheese, mix of lettuce leaves, olives. Served with branded sauce.",
+      "price": "358 сом",
+      "productType": 5,
+      "image": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v1/Salatyi/Grecheskii_salat/Medium.png?hash=3a42a135052a11d0f020484b66d2c982",
+      "news": true
     }
   ],
   "reviews": [

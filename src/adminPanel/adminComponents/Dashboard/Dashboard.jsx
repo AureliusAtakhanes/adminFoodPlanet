@@ -1,11 +1,27 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchProducts } from '../../../store/slices/productsSlice';
 import './Dashboard.css';
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
     const dispatch = useDispatch();
     const products = useSelector(state => state.products.items);
+    const [searchTerm, setSearchTerm] = useState('');
+    const [searchResults, setSearchResults] = useState([]);
+
+    const handleSearchChange = (e) => {
+        setSearchTerm(e.target.value);
+        if (e.target.value.trim() !== '') {
+            const results = products.filter(product =>
+                product.name.toLowerCase().includes(e.target.value.toLowerCase()) ||
+                product.description.toLowerCase().includes(e.target.value.toLowerCase())
+            );
+            setSearchResults(results);
+        } else {
+            setSearchResults([]);
+        }
+    };
 
     useEffect(() => {
         dispatch(fetchProducts());
@@ -33,11 +49,30 @@ const Dashboard = () => {
     return (
         <div className="dashboard">
             <div className="header">
-                <input type="text" placeholder="Поиск..." />
+                <input
+                    type="text"
+                    placeholder="Поиск..."
+                    value={searchTerm}
+                    onChange={handleSearchChange}
+                />
                 <div className="user">
                     <img src="https://via.placeholder.com/30" alt="Пользователь" />
                     <span>Администратор</span>
                 </div>
+            </div>
+            <div className="search-results">
+                {searchResults.length > 0 && (
+                    <div className="search-options">
+                        <h3>Результаты поиска:</h3>
+                        {searchResults.map((product, index) => (
+                            <div key={index} className="search-option">
+                                <Link to={`/edit-product/${product.id}`}>
+                                    <p>{product.name}</p>
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
+                )}
             </div>
             <div className="cards">
                 {items.map((item, index) => (
