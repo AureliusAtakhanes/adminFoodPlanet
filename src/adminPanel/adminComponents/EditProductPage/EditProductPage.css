@@ -6,38 +6,65 @@
     font-family: Mulish !important;
 }
 
-.edit-product-page h2 {
+.edit-product-page h1 {
     margin-bottom: 10px;
+}
+
+.edit-product-page .backToProducts {
+    margin-bottom: 20px;
+}
+
+.backToProducts .backBtn {
+    background-color: transparent;
+    border: 2px solid #007bff;
+    border-radius: 30%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    color: black;
+}
+
+.backToProducts .backBtn:hover {
+    background-color: #007bff;
+    border-color: #0056b3;
+    color: white;
 }
 
 .edit-product-page form {
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    gap: 10px;
+}
+
+.edit-product-page .form-group {
+    display: flex;
+    flex-direction: column;
 }
 
 .edit-product-page label {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-weight: bold;
 }
 
-.edit-product-page input {
-    margin-left: 10px;
+.edit-product-page input,
+.edit-product-page textarea {
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 100%;
+    font-family: Mulish;
 }
 
 .edit-product-page textarea {
-    margin-left: 10px;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    min-width: 250px;
-    min-height: 80px;
+    resize: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 .edit-product-page button {
+    align-self: flex-start;
     background-color: #007bff;
     color: white;
     border: none;
@@ -45,10 +72,6 @@
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
-}
-
-.backToProducts {
-    /* padding-bottom: 20px; */
 }
 
 .edit-product-page button:hover {

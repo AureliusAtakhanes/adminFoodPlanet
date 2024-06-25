@@ -53,48 +53,51 @@ const EditProductPage = () => {
         <div className="edit-product-page">
             <h1>Редактировать продукт</h1>
             <div className='backToProducts'>
-                <button onClick={() => navigate(-1)}>
+                <button className='backBtn' onClick={() => navigate(-1)}>
                     <IoIosArrowBack />
                 </button>
             </div>
 
             <form onSubmit={handleSubmit}>
-                <label>
-                    Название:
+                <div className="form-group">
+                    <label htmlFor="name">Название:</label>
                     <input
                         type="text"
+                        id="name"
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
                     />
-                </label>
-                <label>
-                    Описание:
-                    <textarea
-                        type="text"
-                        name="description"
-                        value={formData.description}
-                        onChange={handleChange}
-                    ></textarea>
-                </label>
-                <label>
-                    Цена:
+                </div>
+                <div className="form-group">
+                    <label htmlFor="price">Цена:</label>
                     <input
                         type="text"
+                        id="price"
                         name="price"
                         value={formData.price}
                         onChange={handleChange}
                     />
-                </label>
-                <label>
-                    Изображение:
+                </div>
+                <div className="form-group">
+                    <label htmlFor="image">Изображение:</label>
                     <input
                         type="text"
+                        id="image"
                         name="image"
                         value={formData.image}
                         onChange={handleChange}
                     />
-                </label>
+                </div>
+                <div className="form-group">
+                    <label htmlFor="description">Описание:</label>
+                    <textarea
+                        id="description"
+                        name="description"
+                        value={formData.description}
+                        onChange={handleChange}
+                    ></textarea>
+                </div>
                 <button type="submit">Сохранить изменения</button>
             </form>
         </div>
