@@ -37,6 +37,13 @@
 
 }
 
+.create-order-page textarea {
+    min-height: 80px;
+    resize: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
 .create-order-page button {
     width: 100%;
     padding: 10px;

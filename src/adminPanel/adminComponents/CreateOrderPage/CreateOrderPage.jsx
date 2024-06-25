@@ -44,14 +44,7 @@ const CreateOrderPage = () => {
                         required
                     />
                 </div>
-                <div>
-                    <label>Описание:</label>
-                    <textarea
-                        value={description}
-                        onChange={(e) => setDescription(e.target.value)}
-                        required
-                    ></textarea>
-                </div>
+
                 <div>
                     <label>Цена:</label>
                     <input
@@ -85,6 +78,14 @@ const CreateOrderPage = () => {
                         value={image}
                         onChange={(e) => setImage(e.target.value)}
                     />
+                </div>
+                <div>
+                    <label>Описание:</label>
+                    <textarea
+                        value={description}
+                        onChange={(e) => setDescription(e.target.value)}
+                        required
+                    ></textarea>
                 </div>
                 <button type="submit">Добавить продукт</button>
             </form>
