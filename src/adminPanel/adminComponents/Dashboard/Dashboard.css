@@ -43,10 +43,6 @@
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.card.active {
-    border: 2px solid #007bff;
-}
-
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
