@@ -61,6 +61,7 @@
     resize: none;
     white-space: pre-wrap;
     word-wrap: break-word;
+    height: 100px;
 }
 
 .edit-product-page button {
