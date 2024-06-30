@@ -100,6 +100,15 @@
       "productType": 5,
       "image": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v1/Salatyi/Grecheskii_salat/Medium.png?hash=3a42a135052a11d0f020484b66d2c982",
       "news": true
+    },
+    {
+      "id": "ec4f",
+      "name": "atakan",
+      "description": "dawdwdwd",
+      "price": "100 eu",
+      "productType": 7,
+      "image": "dad",
+      "news": true
     }
   ],
   "reviews": [

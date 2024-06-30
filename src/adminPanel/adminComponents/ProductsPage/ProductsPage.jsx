@@ -62,7 +62,7 @@ const ProductsPage = () => {
                                 <strong>{product.name}</strong> - {product.price}
                             </div>
                             <div className='editing'>
-                                <Link to={`/edit-product/${product.id}`}>Редактировать</Link>
+                                <Link to={`/products/edit-product/${product.id}`}>Редактировать</Link>
                                 <button onClick={() => handleDelete(product.id)}>Удалить</button>
                             </div>
                         </li>

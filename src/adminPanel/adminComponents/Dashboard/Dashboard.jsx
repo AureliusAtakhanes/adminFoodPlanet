@@ -66,7 +66,7 @@ const Dashboard = () => {
                         <h3>Результаты поиска:</h3>
                         {searchResults.map((product, index) => (
                             <div key={index} className="search-option">
-                                <Link to={`/edit-product/${product.id}`}>
+                                <Link to={`/products/edit-product/${product.id}`}>
                                     <p>{product.name}</p>
                                 </Link>
                             </div>

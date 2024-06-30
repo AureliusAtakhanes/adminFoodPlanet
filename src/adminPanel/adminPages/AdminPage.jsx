@@ -17,13 +17,19 @@ function AdminPage() {
                     <Routes>
                         <Route path="/" element={<Dashboard />} />
                         <Route path="/createProduct" element={<CreateOrderPage />} />
-                        <Route path="/products" element={<ProductsPage />} />
-                        <Route path="/edit-product/:productId" element={<EditProductPage />} />
+                        <Route path="/products/*" element={<ProductsRoutes />} />
                     </Routes>
                 </Suspense>
             </div>
         </div>
     );
 }
+
+const ProductsRoutes = () => (
+    <Routes>
+        <Route path="/" element={<ProductsPage />} />
+        <Route path="/edit-product/:productId" element={<EditProductPage />} />
+    </Routes>
+);
 
 export default AdminPage;
