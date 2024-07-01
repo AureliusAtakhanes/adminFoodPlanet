@@ -16,7 +16,7 @@ export const fetchProductById = createAsyncThunk('products/fetchProductById', as
 export const addProduct = createAsyncThunk('products/addProduct', async (product) => {
     const response = await axios.post(API_URL, {
         ...product,
-        productType: parseInt(product.productType, 10)  // преобразование в число
+        productType: parseInt(product.productType, 10)
     });
     return response.data;
 });
@@ -25,7 +25,7 @@ export const updateProduct = createAsyncThunk('products/updateProduct', async (p
     const { id, ...fields } = product;
     const response = await axios.put(`${API_URL}/${id}`, {
         ...fields,
-        productType: parseInt(fields.productType, 10)  // преобразование в число
+        productType: parseInt(fields.productType, 10)
     });
     return response.data;
 });

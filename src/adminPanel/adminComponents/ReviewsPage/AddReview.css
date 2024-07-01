@@ -1,4 +1,4 @@
-.create-order-page {
+.add-review-page {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
@@ -8,41 +8,63 @@
     font-family: Mulish;
 }
 
-.create-order-page h2 {
+.add-review-page h1 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.create-order-page form div {
+.backToReviews {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.backBtn {
+    background-color: transparent;
+    border: 2px solid #007bff;
+    border-radius: 30%;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    color: black;
+    margin-right: 10px;
+}
+
+.backBtn:hover {
+    background-color: #007bff;
+    border-color: #0056b3;
+    color: white;
+}
+
+.add-review-page form div {
     margin-bottom: 15px;
 }
 
-.create-order-page label {
+.add-review-page label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-.create-order-page input,
-.create-order-page textarea,
-.create-order-page select {
+.add-review-page input,
+.add-review-page textarea,
+.add-review-page select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     font-family: Mulish;
-
 }
 
-.create-order-page textarea {
+.add-review-page textarea {
     min-height: 80px;
     resize: none;
     white-space: pre-wrap;
     word-wrap: break-word;
 }
 
-.create-order-page button {
+.add-review-page form button {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -53,16 +75,16 @@
     font-size: 16px;
 }
 
-.create-order-page button:hover {
+.add-review-page button:hover {
     background-color: #0056b3;
 }
 
-.create-order-page .loading {
+.add-review-page .loading {
     text-align: center;
     margin-top: 20px;
 }
 
-.create-order-page .error {
+.add-review-page .error {
     color: red;
     text-align: center;
     margin-top: 20px;

@@ -1,0 +1,80 @@
+.edit-review-page {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Mulish', sans-serif;
+}
+
+.edit-review-page h1 {
+    margin-bottom: 20px;
+}
+
+.backToReviews {
+    margin-bottom: 20px;
+}
+
+.backBtn {
+    background-color: transparent;
+    border: 2px solid #007bff;
+    border-radius: 30%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    color: black;
+}
+
+.backBtn:hover {
+    background-color: #007bff;
+    border-color: #0056b3;
+    color: white;
+}
+
+.edit-review-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit-review-page .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-review-page label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.edit-review-page input,
+.edit-review-page textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 100%;
+    font-family: 'Mulish', sans-serif;
+}
+
+.edit-review-page textarea {
+    resize: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    height: 100px;
+}
+
+.edit-review-page button {
+    align-self: flex-start;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.edit-review-page button:hover {
+    background-color: #0056b3;
+}

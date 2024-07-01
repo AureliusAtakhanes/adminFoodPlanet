@@ -1,0 +1,79 @@
+.reviews-page {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Mulish', sans-serif;
+}
+
+.reviews-page h1 {
+    margin-bottom: 20px;
+}
+
+.reviews-page .add a {
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+}
+
+.reviews-page ul {
+    list-style: none;
+    padding: 0;
+}
+
+.reviews-page li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.review-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-info-name {
+    font-weight: bold;
+}
+
+.review-content {
+    margin-top: 10px;
+}
+
+.editing {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.reviews-page li a,
+.reviews-page li button {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+}
+
+.reviews-page li a:hover,
+.reviews-page li button:hover {
+    background-color: #0056b3;
+}
+
+.reviews-page .remove {
+    background-color: darkred;
+}
+
+.reviews-page .remove:hover {
+    background-color: tomato;
+}

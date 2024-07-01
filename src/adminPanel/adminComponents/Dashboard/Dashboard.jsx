@@ -56,7 +56,6 @@ const Dashboard = () => {
                     onChange={handleSearchChange}
                 />
                 <div className="user">
-                    <img src="https://via.placeholder.com/30" alt="Пользователь" />
                     <span>Администратор</span>
                 </div>
             </div>
